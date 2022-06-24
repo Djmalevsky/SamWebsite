@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<div id="intro">
+						<h2>ABOUT SAM</h2>
+					</div>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">PRIDE HATS</a></li>
+							<li><a href="generic.html">SLEEK DESIGN</a></li>
+							<li class="active"><a href="elements.html">ABOUT SAM</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/thedeadfeminist" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.tiktok.com/@samoosh_" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
+							<li><a href="https://www.instagram.com/samtikk__/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+
+								<a href="#" class="image fit"><img src="images/SamImage.png" alt="" /></a>
+								<header class="major">
+									<p><font size=+2>Come Dance With Me.</font></p>
+								</header>
+								<!-- Text stuff -->
+									<h2>DANCING IS MY PASSION</h2>
+									<p>My name is Sam and I've had a dream to spread positivity dancing. I was inspired by other dancers like Michael Jackson and one day I decided that I would follow my dream full time.
+									 For a while I had a fear of people judging me. Focusing on dancing for years, I overcame that fear which made me a stronger person. My dream is to inspire others to follow their passions like Michael Jackson.
+									 My hope is to inspire you to take action and not compare yourself to other people.
+									 <a href="#"></a>.</p>
+									<hr />
+											<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+						
+	</body>
+</html>
