@@ -30,8 +30,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">PRIDE HATS</a></li>
-							<li><a href="generic.html">DONATE</a></li>
+							<li><a href="index.html">DONATE</a></li>
+							<li class="active"><a href="generic.html">PRIDE HATS</a></li>
 							<li><a href="elements.html">ABOUT SAM</a></li>
 						</ul>
 						<ul class="icons">
@@ -51,7 +51,7 @@
 									<h2><a href="#">PRIDE HAT #1<br /></a></h2>
 									<p>You are a disapointment to your parents! Come and be one with me!</p>
 								</header>
-								<a href="#" class="image main"><img src="images/Buckethat.png" alt="" /></a>
+								<a href="#" class="image main"><img src="images/BucketHat.jpg" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="#" class="button">Buy now faggot!</a></li>
 								</ul>
@@ -71,7 +71,7 @@
 									</ul>-->
 								</article>
 								<article>
-								<a href="#" class="image fit"><img src="images/Buckethat.jpg" alt=""/></a>
+								<a href="#" class="image fit"><img src="images/BucketHat.png" alt=""/></a>
 									<h4><a href="#"><font size="+2">PRIDE HAT #2</a><font> <br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
 									<!--<header>
 										<h2><a href="#">PRIDE HAT #2<br /></a></h2>
