@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload" onload="HidePaypal()">
+	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
@@ -55,7 +55,7 @@
 </form>-->
 				
 
-<div id="Paypal2">
+<div id="Paypal2" style="display:none">
 <div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
@@ -65,14 +65,22 @@
 <script src="https://www.paypal.com/sdk/js?client-id=AWz-mQ3vnqjwFNkDlfACKPIt6rxnkdrIknsskIeNtMt1s-jx0KsEJeXKSRbX6K0tNKdcTLn40kLG83L9&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
 
   <script>
-  var Amount = 1;
+  var Amount = 0;
 var pp = "10";
+
 	function HidePaypal()
 	{
   	  	  	  document.getElementById("Paypal2").style.display = "none";
+			 
 	}
    function increment() {
+   	if (Amount < 1)
+	{
+		Amount = 1;
+	}
+	else{
 	  Amount = Amount + 1;
+	  }
       document.getElementById('quantity').stepUp();
    }
    function decrement() {
@@ -89,6 +97,14 @@ var pp = "10";
    {
    	  document.getElementById("TheButton").style.display = "none";
 	     	  document.getElementById("Paypal2").style.display = "block";
+			  console.log(Amount);
+			if(Amount == 0)
+			{
+				Amount = 1;
+			}
+			  Amount = Amount * 10 + 5.95;
+			console.log(Amount);
+			  pp = String(Amount);
    }
    function HideThing2()
    {
@@ -119,7 +135,7 @@ var pp = "10";
                             type: "SHIPPING",
                             selected: true,
                             amount: {
-                                value: "15.95",
+                                value: pp,
                                 currency_code: "USD"
                             }
                         },
