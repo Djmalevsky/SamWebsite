@@ -23,7 +23,7 @@
 						</ul>
 						<ul class="icons">
 							<li><a href="https://twitter.com/thedeadfeminist" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.tiktok.com/@smoov.sam" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
+							<li><a href="https://www.tiktok.com/@samoosh_" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
 							<li><a href="https://www.instagram.com/samtikk__/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						</ul>
 
@@ -36,15 +36,12 @@
 							<section class="posts">
 
 								<div id="TheButton">
-									<a href="payment.html" class="image fit"><img src="images/GayHat.jpg" alt="" /></a>
-									<h4><a href="#"><font size="+2">WHITE-BLACK</a><font><br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
+									<a href="payment.html" class="image fit"><img src="images/BasicAssBucketHat.jpg" alt="" /></a>
+									<h4><a href="#"><font size="+2">BLACK-WHITE</a><font><br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
 									<button class="button small" onclick="decrement()">-</button>
-									<input type="number" id="quantity" name="quantity" min="1" style="aligns: center">
+									<input type="number" id="quantity" name="quantity" min="1" style="aligns: center" style="width: 2em">
 									<button class="button small" onclick="increment()">+</button>
-																		<br>
-
 									<button class="button large" onclick="HideThing()">BUY NOW</button>
-
 								</div>
 									<!--<h3>Paypal:</h3>
 										<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="button" onclick="printPopUp()">

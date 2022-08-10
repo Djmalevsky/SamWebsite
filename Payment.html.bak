@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>SHOPSAM</title>
@@ -12,15 +7,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="HidePaypal()">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 					<div id="intro">
 						<h2>SHOP @SAMOOSH_</h2>
 					</div>
-
-
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
@@ -42,38 +35,123 @@
 						<!-- Hats -->
 							<section class="posts">
 
-								<article>
-<script>
-   function increment() {
-      document.getElementById('quantity').stepUp();
-   }
-   function decrement() {
-      document.getElementById('quantity').stepDown();
-   }
-</script>
-        <script>
-            function printPopUp() {
-                alert("Pop-up dialog-box")
-                window.print();
-            }
-        </script>
+								<div id="TheButton">
 									<a href="payment.html" class="image fit"><img src="images/GayHat.jpg" alt="" /></a>
-									<h4><a href="#"><font size="+2">PRIDE HAT #1</a><font><br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
+									<h4><a href="#"><font size="+2">WHITE-BLACK</a><font><br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
 									<button class="button small" onclick="decrement()">-</button>
 									<input type="number" id="quantity" name="quantity" min="1" style="aligns: center">
 									<button class="button small" onclick="increment()">+</button>
+																		<br>
 
-									<h3>Paypal:</h3>
+									<button class="button large" onclick="HideThing()">BUY NOW</button>
+
+								</div>
+									<!--<h3>Paypal:</h3>
 										<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="button" onclick="printPopUp()">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-									</ul>
-								</article>
-								
+</form>-->
+				
 
+<div id="Paypal2">
+<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+</div>
+<script src="https://www.paypal.com/sdk/js?client-id=AWz-mQ3vnqjwFNkDlfACKPIt6rxnkdrIknsskIeNtMt1s-jx0KsEJeXKSRbX6K0tNKdcTLn40kLG83L9&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+  <script>
+  var Amount = 1;
+var pp = "10";
+	function HidePaypal()
+	{
+  	  	  	  document.getElementById("Paypal2").style.display = "none";
+	}
+   function increment() {
+	  Amount = Amount + 1;
+      document.getElementById('quantity').stepUp();
+   }
+   function decrement() {
+	if (Amount < 1)
+	{
+		Amount = 1;
+	}
+	else {
+	Amount = Amount - 1;
+      document.getElementById('quantity').stepDown();
+	  }
+   }
+   function HideThing()
+   {
+   	  document.getElementById("TheButton").style.display = "none";
+	     	  document.getElementById("Paypal2").style.display = "block";
+   }
+   function HideThing2()
+   {
+      document.getElementById("Paypal2").style.display = "block";
+   }
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+          
+        },
+
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: "10.95",
+                    currency_code: "USD"
+                },
+                shipping: {
+                    options: [
+                        {
+                            id: "SHIP_123",
+                            label: "Shipping",
+                            type: "SHIPPING",
+                            selected: true,
+                            amount: {
+                                value: "15.95",
+                                currency_code: "USD"
+                            }
+                        },
+                    ]
+                }
+            }]
+        });
+    },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
 							</section>
 					</div>
 			</div>

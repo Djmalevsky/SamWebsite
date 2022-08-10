@@ -2399,7 +2399,9 @@ input, select, textarea {
 		width: 1rem;
 		z-index: -1;
 	}
-
+input[type='number']{
+    width: 80px;
+} 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;

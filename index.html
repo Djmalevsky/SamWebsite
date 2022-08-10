@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <!--
-	Finished
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Donation Page</title>
+		<title>SHOPSAM</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -13,84 +15,87 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" class="fade-in">
 
-				<!-- Header -->
-					<header id="header">
-					<!--	<a href="index.html" class="logo">Massively</a>-->
-					</header>
+				<!-- Intro -->
+					<div id="intro">
+					
+						<h2>SHOP @SAMOOSH_</h2>
+
+
+					</div>
+
+
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">DONATE</a></li>
-							<li><a href="generic.html">HATS</a></li>
+							<li class="active"><a href="index.html">HATS</a></li>
+							<li><a href="generic.html">DONATE</a></li>
 							<li><a href="elements.html">ABOUT SAM</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://twitter.com/thedeadfeminist" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.tiktok.com/@samoosh_" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
+							<li><a href="https://www.tiktok.com/@smoov.sam" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
 							<li><a href="https://www.instagram.com/samtikk__/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						</ul>
-					</nav>
 
+					</nav>
+					
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Post -->
-							<section class="post">
+						<!-- Featured Hat -->
+							<!--<article class="post featured">
 								<header class="major">
-									<h1>Donate To Me Here<br /></h1>
+									<h2><a href="#">PRIDE HAT #1<br /></a></h2>
+									<p>You are a disapointment to your parents! Come and be one with me!</p>
 								</header>
+								<a href="#" class="image main"><img src="images/BucketHat.jpg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="#" class="button">Buy now faggot!</a></li>
+								</ul>
+							</article> -->
+															<!--<a href="payment.html"><img src="images/32x32.png" style="aligns: center" alt="" /></a>-->
+
+						<!-- Hats -->
+							<section class="posts">
+
+								<article>
+
+
+									<a href="Payment.html" class="image fit"><img src="images/GayHat.jpg" alt="" /></a>
+									<h4><a href="Payment.html"><font size="+2">WHITE-BLACK</a><font><br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
+									<!--<ul class="actions special">
+										<li><a href="#" class="button">Buy now faggot!</a></li>
+									</ul>-->
+								</article>
+								<article>
+								<a href="Payment2.html" class="image fit"><img src="images/BucketHat.jpg" alt=""/></a>
+									<h4><a href="Payment2.html"><font size="+2">BLUE-WHITE</a><font> <br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
+									<!--<header>
+										<h2><a href="#">PRIDE HAT #2<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/GayHat.jpg" alt="" /></a>
+									<ul class="actions special">
+										<li><a href="#" class="button">Buy now faggot!</a></li>
+									</ul>-->
+								
+
+								</article>
+								<article>
+								<a href="Payment3.html" class="image fit"><img src="images/BasicAssBucketHat.jpg" alt="" /></a>
+									<h4><a href="Payment3.html"><font size="+2">BLACK-WHITE</a><font> <br><strike>$20.95 USD</strike><font size="+2">  $10.95 USD</font></h4>
+									<!--<header>
+										<h2><a href="#">PRIDE HAT #3<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/BasicAssBucketHat.jpg" alt="" /></a>
+									<ul class="actions special">
+										<li><a href="#" class="button">Buy now faggot!</a></li>
+									</ul>-->
+								</article>
 							</section>
-<div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=AWz-mQ3vnqjwFNkDlfACKPIt6rxnkdrIknsskIeNtMt1s-jx0KsEJeXKSRbX6K0tNKdcTLn40kLG83L9&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"USD","value":10}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(orderData) {
-            
-            // Full available details
-            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-            // Show a success message within this page, e.g.
-            const element = document.getElementById('paypal-button-container');
-            element.innerHTML = '';
-            element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-            // Or go to another URL:  actions.redirect('thank_you.html');
-            
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script>
 					</div>
-
 			</div>
 
 		<!-- Scripts -->
