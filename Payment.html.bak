@@ -102,7 +102,7 @@ var pp = "10";
 			{
 				Amount = 1;
 			}
-			  Amount = Amount * 10.95 + 5;
+			  Amount = Amount * 10 + 5.95;
 			console.log(Amount);
 			  pp = String(Amount);
    }
